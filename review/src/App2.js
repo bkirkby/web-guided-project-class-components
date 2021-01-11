@@ -27,7 +27,7 @@ class App2 extends React.Component {
 
     render() {
         return(<div>
-            <Person />
+            <Person name={this.state.name}/>
             <button onClick={this.handleClick}>Make it Allison instead.</button>
         </div>);
     }
