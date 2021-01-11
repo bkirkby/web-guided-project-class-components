@@ -61,6 +61,10 @@ class App extends React.Component {
     });
   }
 
+  handleItemAdd = (itemName) => {
+
+  }
+
   // Class methods to update state
   render() {
     return (
