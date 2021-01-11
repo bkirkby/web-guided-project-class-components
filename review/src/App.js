@@ -6,7 +6,11 @@ const App = () => {
   return (
     <div>
       <h1>Hello { name }.</h1>
-      <button>Change it to Allison.</button>
+      <button onClick={
+        () => {
+          setName("Allison");
+        }
+      }>Change it to Allison.</button>
     </div>
   );
 };
