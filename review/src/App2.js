@@ -3,12 +3,11 @@ import React from 'react';
 class Person extends React.Component {
     render() {
         return(<div>
-            <h1>Hello {this.state.name}. You are {this.state.age}.</h1>
-            <p>{this.state.name} is a great name!!!</p>
+            <h1>Hello {this.props.name}.</h1>
+            <p>{this.props.name} is a great name!!!</p>
         </div>);
     }
 }
-
 
 class App2 extends React.Component {
     constructor() {
