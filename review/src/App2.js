@@ -4,7 +4,8 @@ class App2 extends React.Component {
     constructor() {
         super();
         this.state = {
-            name:"Allison"
+            name:"Allison",
+            age: 33
         }
     }
 
