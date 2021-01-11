@@ -48,13 +48,18 @@ class App extends React.Component {
   }
 
   handleItemToggle = ()=> {
-    const itemId = 123;
-    const newGroceries = this.state.groceries.map(item=>{
-      return(item);
-    });
-
+    const itemId = 124;
+    
     this.setState({
-      groceries: newGroceries
+      groceries: this.state.groceries.map(item=>{
+        if(item.id === itemId) {
+          return {
+            ...item,
+            purchased: true
+          }
+        }
+        return(item);
+      })  
     });
   }
 
