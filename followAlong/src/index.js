@@ -68,7 +68,7 @@ class App extends React.Component {
       purchased: false
     };
 
-    const newGroceries = [...this.state.groceries, ];
+    const newGroceries = [...this.state.groceries, item];
 
     this.setState({
       groceries: newGroceries
