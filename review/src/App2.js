@@ -9,6 +9,10 @@ class Person extends React.Component {
     }
 }
 
+const funcFun = ()=>{
+    console.log("here");
+}
+
 class App2 extends React.Component {
     constructor() {
         super();
@@ -25,6 +29,8 @@ class App2 extends React.Component {
     }
 
     render() {
+        funcFun();
+        
         return(<div>
             <Person name={this.state.name}/>
             <button onClick={this.handleClick}>Make it Allison instead.</button>
