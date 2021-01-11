@@ -9,18 +9,18 @@ class App2 extends React.Component {
         }
     }
 
+    handleClick = ()=> {
+        this.setState({
+            name:"Allison"
+        })
+    }
+
     render() {
         const name = "Warren";
 
         return(<div>
             <h1>Hello {this.state.name}. You are {this.state.age}.</h1>
-            <button onClick={
-                ()=>{
-                    this.setState({
-                        name:"Allison"
-                    });
-                }
-            }>Make it Allison instead.</button>
+            <button onClick={handleClick}>Make it Allison instead.</button>
         </div>);
     }
 }
