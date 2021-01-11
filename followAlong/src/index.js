@@ -75,6 +75,16 @@ class App extends React.Component {
     });
   }
 
+  handleItemCompleted = () => {
+    const newGroceries = this.groceries.filter(item=>{
+      return(item.purchased);
+    });
+
+    this.setState({
+      groceries: newGroceries
+    })
+  }
+
   // Class methods to update state
   render() {
     return (
