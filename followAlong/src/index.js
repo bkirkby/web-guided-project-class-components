@@ -77,7 +77,7 @@ class App extends React.Component {
 
   handleItemCompleted = () => {
     const newGroceries = this.state.groceries.filter(item=>{
-      return(item.purchased);
+      return(!item.purchased);
     });
 
     this.setState({
