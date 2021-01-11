@@ -5,7 +5,7 @@ class App2 extends React.Component {
         super();
         this.state = {
             name:"Allison",
-            age: 33
+            age: 32
         }
     }
 
@@ -13,7 +13,7 @@ class App2 extends React.Component {
         const name = "Warren";
 
         return(<div>
-            <h1>Hello {this.state.name}.</h1>
+            <h1>Hello {this.state.name}. You are {this.state.age}.</h1>
         </div>);
     }
 }
