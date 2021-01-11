@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'react';
 
-class Person extends React.Component {
+class Person extends Component {
     render() {
         const { name } = this.props;
 
@@ -11,7 +11,7 @@ class Person extends React.Component {
     }
 }
 
-class App2 extends React.Component {
+class App2 extends Component {
     constructor() {
         super();
         this.state = {
