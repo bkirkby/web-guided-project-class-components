@@ -53,7 +53,7 @@ class App extends React.Component {
         if(item.id === itemId) {
           return {
             ...item,
-            purchased: true
+            purchased: !item.purchased
           }
         }
         return(item);
