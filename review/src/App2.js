@@ -23,7 +23,7 @@ class App2 extends React.Component {
     handleClick = ()=> {
         this.setState({
             name:"Allison"
-        })
+        });
     }
 
     render() {
