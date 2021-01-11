@@ -20,7 +20,7 @@ class App2 extends React.Component {
 
         return(<div>
             <h1>Hello {this.state.name}. You are {this.state.age}.</h1>
-            <button onClick={handleClick}>Make it Allison instead.</button>
+            <button onClick={this.handleClick}>Make it Allison instead.</button>
         </div>);
     }
 }
