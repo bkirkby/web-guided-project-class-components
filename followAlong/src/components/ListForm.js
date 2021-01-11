@@ -2,6 +2,12 @@ import React from "react";
 
 class ListForm extends React.Component {
   // Constructor with state
+  constructor() {
+    super();
+    this.state = {
+      inputValue: ""
+    }
+  }
 
   handleChanges = e => {
     console.log(e.target.value);
