@@ -76,7 +76,7 @@ class App extends React.Component {
   }
 
   handleItemCompleted = () => {
-    const newGroceries = this.groceries.filter(item=>{
+    const newGroceries = this.state.groceries.filter(item=>{
       return(item.purchased);
     });
 
@@ -93,7 +93,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm handleItemAdd={this.handleItemAdd}/>
          </div>
-        <GroceryList groceries={this.state.groceries} handleItemCompleted={handleItemCompleted} handleItemToggle={this.handleItemToggle}/>
+        <GroceryList groceries={this.state.groceries} handleItemCompleted={this.handleItemCompleted} handleItemToggle={this.handleItemToggle}/>
        </div>
     );
   }
