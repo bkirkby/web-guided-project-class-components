@@ -9,10 +9,6 @@ class Person extends React.Component {
     }
 }
 
-const funcFun = ()=>{
-    console.log("funcfun");
-}
-
 class App2 extends React.Component {
     constructor() {
         super();
