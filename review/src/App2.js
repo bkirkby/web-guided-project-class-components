@@ -2,9 +2,11 @@ import React from 'react';
 
 class Person extends React.Component {
     render() {
+        const { name } = this.props;
+
         return(<div>
-            <h1>Hello {this.props.name}.</h1>
-            <p>{this.props.name} is a great name!!!</p>
+            <h1>Hello {name}.</h1>
+            <p>{name} is a great name!!!</p>
         </div>);
     }
 }
@@ -25,8 +27,7 @@ class App2 extends React.Component {
     }
 
     render() {
-        funcFun();
-
+        const { name } = this.state;
         return(<div>
             <Person name={this.state.name}/>
             <button onClick={this.handleClick}>Make it Allison instead.</button>
