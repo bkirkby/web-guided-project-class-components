@@ -93,7 +93,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm handleItemAdd={this.handleItemAdd}/>
          </div>
-        <GroceryList groceries={this.state.groceries} handleItemToggle={this.handleItemToggle}/>
+        <GroceryList groceries={this.state.groceries} handleItemCompleted={handleItemCompleted} handleItemToggle={this.handleItemToggle}/>
        </div>
     );
   }
