@@ -49,10 +49,10 @@ class App extends React.Component {
 
   handleItemToggle = ()=> {
     const newGroceries = this.state.groceries;
-    newGroceries[0].purchased = true;
+    newGroceries[2].purchased = true;
 
     this.setState({
-      groceries:newGroceries
+      groceries: newGroceries
     });
   }
 
@@ -60,6 +60,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <button onClick={this.handleItemToggle}>change bannas</button>
+
         <div className="header">
            <h1>Shopping List</h1>
            <ListForm />
