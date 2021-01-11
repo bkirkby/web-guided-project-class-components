@@ -62,7 +62,17 @@ class App extends React.Component {
   }
 
   handleItemAdd = (itemName) => {
+    const item = {
+      name: itemName,
+      id: this.state.groceries.length,
+      purchased: false
+    };
 
+    const newGroceries = [...this.state.groceries, ];
+
+    this.setState({
+      groceries: newGroceries
+    });
   }
 
   // Class methods to update state
