@@ -47,9 +47,7 @@ class App extends React.Component {
     }
   }
 
-  handleItemToggle = ()=> {
-    const itemId = 124;
-    
+  handleItemToggle = (itemId)=> {
     this.setState({
       groceries: this.state.groceries.map(item=>{
         if(item.id === itemId) {
@@ -67,8 +65,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.handleItemToggle}>change bannas</button>
-
         <div className="header">
            <h1>Shopping List</h1>
            <ListForm />
