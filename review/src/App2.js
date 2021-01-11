@@ -4,7 +4,7 @@ class App2 extends React.Component {
     constructor() {
         super();
         this.state = {
-            name:"Warren"
+            name:"Allison"
         }
     }
 
@@ -12,7 +12,7 @@ class App2 extends React.Component {
         const name = "Warren";
 
         return(<div>
-            <h1>Hello {name}.</h1>
+            <h1>Hello {this.state.name}.</h1>
         </div>);
     }
 }
