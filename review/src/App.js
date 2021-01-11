@@ -9,8 +9,8 @@ const App = () => {
   return (
     <div>
       <h1>Hello { name }.</h1>
-      <p>{name} is a great name! Never change it {name}</p>
-      
+      <p>{name} is a great name! Never change it {name}.</p>
+
       <button onClick={handleClick}>Change it to Allison.</button>
     </div>
   );
