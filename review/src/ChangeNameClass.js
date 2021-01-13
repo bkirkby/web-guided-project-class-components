@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class ChangeNameClass extends React.Component {
+// class ChangeNameClass extends React.Component {
+class ChangeNameClass extends Component {
   // constructor(props) {
   //   super(props);
   // }
