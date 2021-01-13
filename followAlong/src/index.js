@@ -43,20 +43,30 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      groceries:groceries
+      groceries: groceries
     }
   }
 
+  toggleItem = itemId => {
+    this.setState({
+      groceries: this.state.groceries.map(item => {
+        if (item.id === itemId) {
+          return { ...item, purchased: !item.purchased }
+        }
+        return item;
+      })
+    })
+  }
   // Class methods to update state
   render() {
     return (
       <div className="App">
         <div className="header">
-           <h1>Shopping List</h1>
-           <ListForm />
-         </div>
-        <GroceryList groceries={groceries} />
-       </div>
+          <h1>Shopping List</h1>
+          <ListForm />
+        </div>
+        <GroceryList toggleItem={this.toggleItem} groceries={this.state.groceries} />
+      </div>
     );
   }
 }
