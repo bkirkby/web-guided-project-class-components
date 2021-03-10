@@ -9,7 +9,8 @@ class ListForm extends React.Component {
 
   // class property to submit form
   handleSubmit = e => {
-    // e.preventDefault();
+    e.preventDefault();
+    // do something with the inputted item name
   }
 
   render() {
