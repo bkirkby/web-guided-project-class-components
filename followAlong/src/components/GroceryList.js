@@ -10,7 +10,7 @@ const GroceryList = props => {
       {props.groceries.map(item => (
         <Item key={item.id} item={item} togglePurchased={props.togglePurchased} />
       ))}
-      <button className="clear-btn">
+      <button onClick={props.clearPurchased} className="clear-btn">
         Clear Purchased
       </button>
     </div>
