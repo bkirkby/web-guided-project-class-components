@@ -2,6 +2,12 @@ import React from "react";
 
 class ListForm extends React.Component {
   // Constructor with state
+  constructor() {
+    super();
+    this.state = {
+      itemName: ''
+    }
+  }
 
   handleChanges = e => {
     // update state with each keystroke
