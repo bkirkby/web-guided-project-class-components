@@ -34,7 +34,7 @@ const global_groceries = [
   {
     name: 'Granola',
     id: 1248,
-    purchased: true
+    purchased: false
   }
 ];
 
@@ -62,7 +62,11 @@ class App extends React.Component {
   }
 
   togglePurchased = (itemId) => {
-
+    this.setState({
+      groceries: this.state.groceries.map(item => {
+        return item;
+      })
+    })
   }
 
   // Class methods to update state
