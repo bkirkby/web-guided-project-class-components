@@ -34,7 +34,7 @@ const global_groceries = [
   {
     name: 'Granola',
     id: 1248,
-    purchased: false
+    purchased: true
   }
 ];
 
@@ -59,6 +59,10 @@ class App extends React.Component {
           }
         ]
     })
+  }
+
+  togglePurchased = (itemId) => {
+
   }
 
   // Class methods to update state
