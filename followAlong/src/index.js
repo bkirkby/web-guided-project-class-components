@@ -5,7 +5,7 @@ import GroceryList from './components/GroceryList';
 import ListForm from './components/ListForm';
 import './styles.scss';
 
-const groceries = [
+const global_groceries = [
   {
     name: 'Bananas',
     id: 123,
@@ -43,7 +43,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      groceries: groceries
+      groceries: global_groceries
     }
   }
 
@@ -69,7 +69,7 @@ class App extends React.Component {
           <h1>Shopping List</h1>
           <ListForm addItem={this.addItem} />
         </div>
-        <GroceryList groceries={groceries} />
+        <GroceryList groceries={global_groceries} />
       </div>
     );
   }
