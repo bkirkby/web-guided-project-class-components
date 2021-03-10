@@ -5,7 +5,7 @@ class ListForm extends React.Component {
   constructor() {
     super();
     this.state = {
-      itemName: 'chips'
+      itemName: ''
     }
   }
 
