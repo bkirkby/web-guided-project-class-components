@@ -47,6 +47,18 @@ class App extends React.Component {
     }
   }
 
+  addItem = (itemName) => {
+    this.setState({
+      groceries: [...this.state.groceries,
+      {
+        name: itemName,
+        id: Date.now(),
+        purchased: false
+      }
+      ]
+    })
+  }
+
   // Class methods to update state
   render() {
     return (
