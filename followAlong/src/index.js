@@ -62,6 +62,12 @@ class App extends React.Component {
   togglePurchased = itemId => {
     this.setState({
       groceries: this.state.groceries.map(item => {
+        if (item.id === itemId) {
+          return {
+            ...item,
+            purchased: !item.purchased
+          }
+        }
         return item;
       })
     })
