@@ -13,6 +13,13 @@ const Person = props => {
 
 class App extends React.Component {
 
+  constructor() {
+    super();
+    this.state = {
+      name: 'kirkby'
+    }
+  }
+
   handleSomething = () => {
 
   }
