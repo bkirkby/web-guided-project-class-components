@@ -13,11 +13,13 @@ const Person = props => {
 
 const App = () => {
   const [name, setName] = useState('kirkby');
+  const handleClick = 
 
   return (
     <div>
       <Person name={name} />
-    </div>
+      <button onClick={ } />set Liz</button>
+    </div >
   );
 };
 
