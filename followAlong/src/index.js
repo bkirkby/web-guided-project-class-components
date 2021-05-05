@@ -59,6 +59,14 @@ class App extends React.Component {
     })
   }
 
+  togglePurchased = itemId => {
+    this.setState({
+      groceries: this.state.groceries.map(item => {
+        return item;
+      })
+    })
+  }
+
   render() {
     return (
       <div className="App">
