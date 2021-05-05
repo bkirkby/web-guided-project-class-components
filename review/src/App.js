@@ -15,6 +15,7 @@ const App = () => {
   const [name, setName] = useState('kirkby');
   const handleClick = (e) => {
     e.preventDefault();
+    console.log(e);
   };
 
   return (
