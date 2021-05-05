@@ -48,6 +48,17 @@ class App extends React.Component {
   }
 
   // Class methods to update state
+
+  addItem = newItemName => {
+    this.setState({
+      groceries: [...this.state.groceries, {
+        name: newItemName,
+        id: Date.now(),
+        purchased: false
+      }]
+    })
+  }
+
   render() {
     return (
       <div className="App">
