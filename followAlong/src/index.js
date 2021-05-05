@@ -91,7 +91,7 @@ class App extends React.Component {
           <h1>Shopping List</h1>
           <ListForm addItem={this.addItem} />
         </div>
-        <GroceryList clearPuchased={this.clearPurchased} groceries={this.state.groceries} togglePurchased={this.togglePurchased} />
+        <GroceryList clearPurchased={this.clearPurchased} groceries={this.state.groceries} togglePurchased={this.togglePurchased} />
       </div>
     );
   }
