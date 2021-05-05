@@ -24,7 +24,7 @@ const groceries = [
   {
     name: 'Pizza Sauce',
     id: 1246,
-    purchased: true
+    purchased: false
   },
   {
     name: 'Raw Honey',
