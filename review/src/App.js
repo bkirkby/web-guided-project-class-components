@@ -12,7 +12,7 @@ const Person = props => {
 };
 
 const App = () => {
-  const [name, setName] = useState();//'kirkby');
+  const [name, setName] = useState('kirkby');
   // const handleClick =; 
 
   return (
