@@ -16,6 +16,7 @@ const App = () => {
   const handleClick = (e) => {
     e.preventDefault();
     console.log(e);
+    setName('Liz');
   };
 
   return (
