@@ -12,9 +12,11 @@ const Person = props => {
 };
 
 const App = () => {
+  const [name, setName] = useState('kirkby');
+
   return (
     <div>
-      <h1>Hello Warren</h1>
+      <Person name={name} />
     </div>
   );
 };
