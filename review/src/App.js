@@ -13,12 +13,12 @@ const Person = props => {
 
 const App = () => {
   const [name, setName] = useState('kirkby');
-  const handleClick = 
+  // const handleClick =; 
 
   return (
     <div>
       <Person name={name} />
-      <button onClick={ } />set Liz</button>
+      {/* <button onClick={ } />set Liz</button> */}
     </div >
   );
 };
