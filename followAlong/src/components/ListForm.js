@@ -19,7 +19,7 @@ class ListForm extends React.Component {
     return (
       <form>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
-        <input type="text" name="item" />
+        <input value={this.state.newItemName} type="text" name="item" />
         <button>Add</button>
       </form>
     );
