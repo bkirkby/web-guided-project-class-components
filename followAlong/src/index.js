@@ -24,7 +24,7 @@ const groceries = [
   {
     name: 'Pizza Sauce',
     id: 1246,
-    purchased: false
+    purchased: true
   },
   {
     name: 'Raw Honey',
@@ -43,7 +43,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      groceries:groceries
+      groceries: groceries
     }
   }
 
@@ -52,11 +52,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="header">
-           <h1>Shopping List</h1>
-           <ListForm />
-         </div>
+          <h1>Shopping List</h1>
+          <ListForm />
+        </div>
         <GroceryList groceries={groceries} />
-       </div>
+      </div>
     );
   }
 }
