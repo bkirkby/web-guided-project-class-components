@@ -20,7 +20,11 @@ class App extends React.Component {
     }
   }
 
-  handleSomething = () => {
+  handleClick = (e) => {
+    e.preventDefault();
+    this.setState({
+      name: 'Liz'
+    });
   }
 
   // handleSomethingElse() {
@@ -30,6 +34,7 @@ class App extends React.Component {
     return (
       <div>
         <Person name={this.state.name} />
+        <button onClick={this.handleClick}>set Liz</button>
       </div>
     )
   }
