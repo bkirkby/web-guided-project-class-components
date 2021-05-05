@@ -8,6 +8,7 @@ const Person = props => {
         {props.name} is a great name! never change it!
       </p>
     </div>
+  );
 };
 
 const App = () => {
