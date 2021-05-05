@@ -73,6 +73,17 @@ class App extends React.Component {
     })
   }
 
+  clearPurchased = () => {
+    this.setState({
+      groceries: this.state.groceries.filter(item => {
+        if (item.purchased) {
+          return false;
+        }
+        return true;
+      })
+    })
+  }
+
   render() {
     return (
       <div className="App">
