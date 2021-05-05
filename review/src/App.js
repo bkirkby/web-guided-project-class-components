@@ -13,12 +13,14 @@ const Person = props => {
 
 const App = () => {
   const [name, setName] = useState('kirkby');
-  // const handleClick =; 
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div>
       <Person name={name} />
-      {/* <button onClick={ } />set Liz</button> */}
+      <button onClick={handleClick}>set Liz</button>
     </div >
   );
 };
